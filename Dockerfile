@@ -29,7 +29,6 @@ USER root
 EXPOSE 43594
 EXPOSE 8080
 EXPOSE 43595
-RUN setcap 'cap_net_bind_service=+ep' `readlink -f $(which java)`
 
 USER apollo
 
